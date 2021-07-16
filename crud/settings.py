@@ -34,7 +34,6 @@ ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1']
 INSTALLED_APPS = [
     'empcrud',
     'crispy_forms',
-    'django_tables2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
