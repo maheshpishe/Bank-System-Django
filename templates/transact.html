@@ -4,15 +4,15 @@
 {%block content%}
 <style type="">
   .messages {
-  border-radius: 10px;
+  border-radius: auto;
   box-shadow: 3px 3px 4px 0px rgba(50, 50, 50, 0.75);
   color: black;
   background-color: #03F8F8;
-  margin-bottom: 20px;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: auto;
+  padding-top: auto;
   text-align: center;
   width: 80%;
 }
@@ -164,12 +164,13 @@ section{
     <div class="div-col-md10.offset-md-1 mt-5">
       <div class="jumbotron">
       	<h1>{% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <h2 {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h2>
-    {% endfor %}
-</ul>
-{% endif %}</h1>
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+</h1>
   <h1 class="w3-container w3-monospace" style="text-align: center;">Make Transaction</h1>
     <hr class="my-4">
 

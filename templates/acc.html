@@ -151,12 +151,13 @@ section{
     <div class="div-col-md10.offset-md-1 mt-5">
       <div class="jumbotron">
         <h1>{% if messages %}
-<ul class="messages">
-    {% for message in messages %}
-    <h2 style="" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h2>
-    {% endfor %}
-</ul>
-{% endif %}</h1>
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+</h1>
   <h1 class="w3-container w3-monospace" style="text-align: center;">User Registration</h1>
     <hr class="my-4">
   
