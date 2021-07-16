@@ -11,7 +11,7 @@ from django.db.models import IntegerField
 class Employee(models.Model):
 	name=models.CharField(max_length=20,default=None)
 	acntnumber=models.IntegerField(blank=False,null=False,default=None)
-	email=models.EmailField(max_length=20,default=None)
+	email=models.EmailField(max_length=30,default=None)
 	MobNumber=models.CharField(max_length=10,default=None)
 	balance=models.FloatField(null=True, blank=True, default=0.0)
 	# position=models.ForeignKey(Position,on_delete=models.CASCADE)

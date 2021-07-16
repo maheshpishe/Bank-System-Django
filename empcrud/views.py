@@ -43,14 +43,16 @@ def trans(request):
 		msg=messages.success(request, 'Transaction Successful!')
 		return render(request,'transact.html',{'message':msg,'form1':form})
 def accnt(request):
+	form=Userform()
 	if request.method=='GET':
-		form=Userform()
+		
 		return render(request,'acc.html',{'form':form})
 	else:
 		form=Userform(request.POST)
 		if form.is_valid():
 			form.save()
-		return redirect('/')
+		msg=messages.success(request, 'Account Added Succesfully!')
+		return render(request,'acc.html',{'form':Userform(),'msg':msg})
 
 def history(request):
 	data=History.objects.all()
