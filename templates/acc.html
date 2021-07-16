@@ -137,7 +137,7 @@ section{
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-     <label style="font-size:3vw;" class="logo"><i class="fas fa-university"></i> Sparks Bank</label>
+      <label style="font-size:2vw;" class="logo"><i class="fas fa-university"></i> Sparks Bank</label>
       <ul>
         <li><a style="padding-right:3rem;padding-left: 3rem;" class="btn btn-danger" href="/"><i class="fas fa-chevron-circle-left"></i> Back</a></li>
         
@@ -153,7 +153,7 @@ section{
         <h1>{% if messages %}
 <ul class="messages">
     {% for message in messages %}
-    <h2{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h2>
+    <h2 style="" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</h2>
     {% endfor %}
 </ul>
 {% endif %}</h1>
