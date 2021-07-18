@@ -1,5 +1,5 @@
 # Bank-System-Django
-Basic Banking system using Django 
+Responsive Banking webapp using Django 
    
 **Features:**
 
